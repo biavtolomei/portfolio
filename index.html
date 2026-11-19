@@ -147,10 +147,51 @@
           <p data-pt="Estes três trabalhos foram criados especificamente para o portfólio e não reproduzem materiais confidenciais de clientes." data-en="These three projects were created specifically for the portfolio and do not reproduce confidential client materials.">Estes três trabalhos foram criados especificamente para o portfólio e não reproduzem materiais confidenciais de clientes.</p>
         </div>
         <div class="demo-grid">
-          <article class="demo-card reveal"><span>01</span><p class="mini">TREINAMENTO TÉCNICO ON-LINE</p><h3 data-pt="Içamento Seguro: decisões antes da operação" data-en="Safe lifting: decisions before operation">Içamento Seguro: decisões antes da operação</h3><p data-pt="Microcurso conceitual que organiza conteúdo técnico em uma jornada orientada à observação, decisão e comunicação." data-en="A conceptual microcourse that structures technical content around observation, decision-making and communication.">Microcurso conceitual que organiza conteúdo técnico em uma jornada orientada à observação, decisão e comunicação.</p><div class="mini-flow"><b>OBSERVAR</b><i></i><b>DECIDIR</b><i></i><b>COMUNICAR</b></div></article>
-          <article class="demo-card reveal"><span>02</span><p class="mini">MICROVÍDEO</p><h3 data-pt="Antes de usar IA: três perguntas" data-en="Before using AI: three questions">Antes de usar IA: três perguntas</h3><p data-pt="Microvídeo conceitual que transforma princípios de uso responsável da IA em uma rotina simples: pausar, verificar e decidir." data-en="A conceptual microvideo that turns responsible AI principles into a simple routine: pause, verify and decide.">Microvídeo conceitual que transforma princípios de uso responsável da IA em uma rotina simples: pausar, verificar e decidir.</p><blockquote>“Pause, verifique e decida.”</blockquote></article>
-          <article class="demo-card reveal"><span>03</span><p class="mini">CENÁRIO RAMIFICADO</p><h3 data-pt="Decisão em campo" data-en="Decision in the field">Decisão em campo</h3><p data-pt="Cenário de decisão com feedback formativo, progressão visível e foco na transferência da aprendizagem para situações de trabalho." data-en="A decision scenario with formative feedback, visible progress and a focus on transfer to workplace situations.">Cenário de decisão com feedback formativo, progressão visível e foco na transferência da aprendizagem para situações de trabalho.</p><div class="choice"><span>A</span><span class="selected">B</span><span>C</span></div></article>
+          <article class="demo-card reveal"><span>01</span><p class="mini">TREINAMENTO TÉCNICO ON-LINE</p><h3 data-pt="Içamento Seguro: decisões antes da operação" data-en="Safe lifting: decisions before operation">Içamento Seguro: decisões antes da operação</h3><p data-pt="Microcurso conceitual que organiza conteúdo técnico em uma jornada orientada à observação, decisão e comunicação." data-en="A conceptual microcourse that structures technical content around observation, decision-making and communication.">Microcurso conceitual que organiza conteúdo técnico em uma jornada orientada à observação, decisão e comunicação.</p><div class="mini-flow"><b>OBSERVAR</b><i></i><b>DECIDIR</b><i></i><b>COMUNICAR</b></div><button class="demo-open" type="button" data-demo="course" data-pt="Experimentar microcurso" data-en="Try microcourse">Experimentar microcurso</button></article>
+          <article class="demo-card reveal"><span>02</span><p class="mini">MICROVÍDEO</p><h3 data-pt="Antes de usar IA: três perguntas" data-en="Before using AI: three questions">Antes de usar IA: três perguntas</h3><p data-pt="Microvídeo conceitual que transforma princípios de uso responsável da IA em uma rotina simples: pausar, verificar e decidir." data-en="A conceptual microvideo that turns responsible AI principles into a simple routine: pause, verify and decide.">Microvídeo conceitual que transforma princípios de uso responsável da IA em uma rotina simples: pausar, verificar e decidir.</p><blockquote>“Pause, verifique e decida.”</blockquote><button class="demo-open" type="button" data-demo="ai-video" data-pt="Assistir microvídeo" data-en="Watch microvideo">Assistir microvídeo</button></article>
+          <article class="demo-card reveal"><span>03</span><p class="mini">CENÁRIO RAMIFICADO</p><h3 data-pt="Decisão em campo" data-en="Decision in the field">Decisão em campo</h3><p data-pt="Cenário de decisão com feedback formativo, progressão visível e foco na transferência da aprendizagem para situações de trabalho." data-en="A decision scenario with formative feedback, visible progress and a focus on transfer to workplace situations.">Cenário de decisão com feedback formativo, progressão visível e foco na transferência da aprendizagem para situações de trabalho.</p><div class="choice"><span>A</span><span class="selected">B</span><span>C</span></div><button class="demo-open" type="button" data-demo="scenario" data-pt="Experimentar cenário" data-en="Try scenario">Experimentar cenário</button></article>
         </div>
+
+        <dialog class="demo-dialog" id="demo-course" aria-labelledby="course-title">
+          <div class="dialog-shell">
+            <button class="dialog-close" type="button" aria-label="Fechar">×</button>
+            <p class="dialog-kicker" data-pt="DEMONSTRAÇÃO INTERATIVA • MICROLEARNING" data-en="INTERACTIVE DEMO • MICROLEARNING">DEMONSTRAÇÃO INTERATIVA • MICROLEARNING</p>
+            <h3 id="course-title" data-pt="Içamento Seguro: decisões antes da operação" data-en="Safe lifting: decisions before operation">Içamento Seguro: decisões antes da operação</h3>
+            <div class="course-tabs" role="tablist" aria-label="Etapas do microcurso">
+              <button class="active" type="button" data-course-step="0" data-pt="1. Observar" data-en="1. Observe">1. Observar</button>
+              <button type="button" data-course-step="1" data-pt="2. Decidir" data-en="2. Decide">2. Decidir</button>
+              <button type="button" data-course-step="2" data-pt="3. Comunicar" data-en="3. Communicate">3. Comunicar</button>
+            </div>
+            <div class="course-panel" id="course-panel" aria-live="polite"></div>
+          </div>
+        </dialog>
+
+        <dialog class="demo-dialog" id="demo-ai-video" aria-labelledby="ai-title">
+          <div class="dialog-shell">
+            <button class="dialog-close" type="button" aria-label="Fechar">×</button>
+            <p class="dialog-kicker" data-pt="DEMONSTRAÇÃO INTERATIVA • MICROVÍDEO" data-en="INTERACTIVE DEMO • MICROVIDEO">DEMONSTRAÇÃO INTERATIVA • MICROVÍDEO</p>
+            <h3 id="ai-title" data-pt="Antes de usar IA: três perguntas" data-en="Before using AI: three questions">Antes de usar IA: três perguntas</h3>
+            <div class="microvideo" aria-live="polite">
+              <div class="microvideo-frame"><span class="frame-count" id="frame-count">01 / 06</span><p id="microvideo-text"></p></div>
+              <div class="microvideo-progress"><i id="microvideo-bar"></i></div>
+              <div class="microvideo-controls">
+                <button type="button" id="microvideo-play" data-pt="▶ Reproduzir" data-en="▶ Play">▶ Reproduzir</button>
+                <button type="button" id="microvideo-reset" data-pt="↺ Reiniciar" data-en="↺ Restart">↺ Reiniciar</button>
+              </div>
+            </div>
+            <p class="dialog-note" data-pt="O sentido completo está disponível em texto: a experiência não depende de áudio." data-en="The complete meaning is available in text: the experience does not rely on audio.">O sentido completo está disponível em texto: a experiência não depende de áudio.</p>
+          </div>
+        </dialog>
+
+        <dialog class="demo-dialog" id="demo-scenario" aria-labelledby="scenario-title">
+          <div class="dialog-shell">
+            <button class="dialog-close" type="button" aria-label="Fechar">×</button>
+            <p class="dialog-kicker" data-pt="DEMONSTRAÇÃO INTERATIVA • CENÁRIO RAMIFICADO" data-en="INTERACTIVE DEMO • BRANCHING SCENARIO">DEMONSTRAÇÃO INTERATIVA • CENÁRIO RAMIFICADO</p>
+            <h3 id="scenario-title" data-pt="Decisão em campo" data-en="Decision in the field">Decisão em campo</h3>
+            <div class="scenario-progress"><span id="scenario-progress-text"></span><i><b id="scenario-progress-bar"></b></i></div>
+            <div id="scenario-stage" class="scenario-stage" aria-live="polite"></div>
+          </div>
+        </dialog>
       </div>
     </section>
 
